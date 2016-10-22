@@ -8,7 +8,7 @@
  * Controller of the demositeApp
  */
 angular.module('demositeApp')
-  .controller('AboutCtrl', function () {
+  .controller('TestCaseCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
