@@ -22,6 +22,11 @@ angular
                 controller: 'GReCaptchaCtrl',
                 controllerAs: 'gReCaptcha'
             })
+            .when('/ipApi', {
+                templateUrl: 'views/ipApi.html',
+                controller: 'IpApiCtrl',
+                controllerAs: 'ipApi'
+            })
             .otherwise({
                 redirectTo: '/'
             });

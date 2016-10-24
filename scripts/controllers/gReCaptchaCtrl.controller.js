@@ -55,7 +55,7 @@ angular.module('demositeApp')
 
         $scope.login = function () {
             logCount++;
-            if(logCount>3){
+            if(logCount>1){
                 $scope.flag.isNotOK = true;
                 showReCaptcha();
             }

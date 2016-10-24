@@ -1,0 +1,56 @@
+<style>
+    .leftTitle{
+        text-align: right;
+        font-weight: bold;
+        color: #777;
+        white-space: nowrap;
+        width: 135px;
+    }
+
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            IP-API
+        </h3>
+    </div>
+    <div class="panel-body">
+        <form class="form" role="form">
+            <div class="form-group">
+                <label for="ipaddress">IP:</label>
+                <input type="text" class="form-control" id="ipaddress" ng-model="ipaddress">
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="submit()" ng-disabled="flag.pending">{{flag.pending?'Loading':'Submit'}}</button>
+        </form>
+    </div>
+</div>
+<div class="panel panel-default" ng-show="flag.showResult">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Search Result
+        </h3>
+    </div>
+    <div class="panel-body">
+        <form class="form" role="form">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="leftTitle">IP: </span>
+                    <span>{{ipDetail.query}}</span>
+                </li>
+                <li class="list-group-item">
+                    <span class="leftTitle">Country: </span>
+                    <span>{{ipDetail.country}}</span>
+                </li>
+                <li class="list-group-item">
+                    <span class="leftTitle">Region: </span>
+                    <span>{{ipDetail.regionName}}</span>
+                </li>
+                <li class="list-group-item">
+                    <span class="leftTitle">City: </span>
+                    <span>{{ipDetail.city}}</span>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
