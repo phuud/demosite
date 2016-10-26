@@ -29,7 +29,8 @@ angular
             })
             .when('/gotoBtn', {
                 templateUrl: 'views/gotoBtn.html',
-                controller: 'GotoBtnCtrl'
+                controller: 'GotoBtnCtrl',
+                controllerAs: 'gotoBtn'
             })
             .otherwise({
                 redirectTo: '/'
