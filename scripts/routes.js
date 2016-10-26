@@ -27,6 +27,11 @@ angular
                 controller: 'IpApiCtrl',
                 controllerAs: 'ipApi'
             })
+            .when('/gotoBtn', {
+                templateUrl: 'views/gotoBtn.html',
+                controller: 'GotoBtnCtrl',
+                controllerAs: 'gotoBtn'
+            })
             .otherwise({
                 redirectTo: '/'
             });
